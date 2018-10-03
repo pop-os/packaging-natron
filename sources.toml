@@ -7,7 +7,7 @@ email = "info@system76.com"
 [[source]]
 name = "natron"
 build_on = "changelog"
-requires_extract = false
+extract = false
 
     [source.location]
     url = "https://github.com/NatronGitHub/Natron/releases/download/2.3.14/Natron-2.3.14-Linux-x86_64bit-portable.tar.xz"
