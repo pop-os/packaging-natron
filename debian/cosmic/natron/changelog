@@ -1,0 +1,15 @@
+natron (2.3.14~0pop2) cosmic; urgency=medium
+
+  * Port to cosmic
+
+ -- Michael Murphy <michael@system76.com>  Tue, 16 Oct 2018 16:23:00 -0600
+
+natron (2.3.14~0pop1) bionic; urgency=medium
+
+  * Error messages are not cleared anymore at each rendered frame. They can be cleared explicitely using the "Refresh" button in the viewer.
+  * ReadSVG: Fix reading layers of SVG files #292
+  * Fix many G'MIC plugins. Changes are not backward compatible and existing graphs may need to be reworked. Note that G'MIC plugins are still beta. #295
+  * LensDistortion: fix loading PFBarrel files #296
+  * Label parameters now use both columns in the parameters panel.
+
+ -- Michael Murphy <michael@system76.com>  Tue, 2 Oct 2018 10:00:00 -0600
