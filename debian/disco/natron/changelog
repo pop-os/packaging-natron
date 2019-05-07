@@ -1,3 +1,10 @@
+natron (2.3.14~0pop3) disco; urgency=medium
+
+  * Remove libfreetype6 from the lib bundling.
+    - Fix for an issue with Arena.ofx
+
+ -- Michael Aaron Murphy <mmstick@pop-os.localdomain>  Tue, 07 May 2019 13:47:08 -0600
+
 natron (2.3.14~0pop2) disco; urgency=medium
 
   * Port to disco
