@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Natron
+GenericName=Natron
+X-GNOME-FullName=Natron
+Icon=natron
+Categories=AudioVideo;Video
+Keywords=Natron;VFX;Compositing;Motion;Graphics;
+Terminal=false
+StartupNotify=true
+Exec=/usr/bin/Natron
+
