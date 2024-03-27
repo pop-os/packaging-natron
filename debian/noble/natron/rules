@@ -1,0 +1,29 @@
+#!/usr/bin/make -f
+
+PREFIX=usr/
+APP=$(PREFIX)share/applications/
+LIB=$(PREFIX)lib/natron/
+SCALABLE=$(PREFIX)share/icons/hicolor/scalable/apps/
+SVG=natron.svg
+DESKTOP=natron.desktop
+
+LIBFREETYPE=libfreetype.so.6
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+override_dh_auto_test:
+override_dh_auto_build:
+override_dh_auto_install:
+	mkdir -p $(LIB) $(SCALABLE)
+	tar -xvf *.tar.xz
+	mv Natron*/* $(LIB)
+	# Remove a lib that breaks natron on 19.04
+	rm $(LIB)/lib/$(LIBFREETYPE)
+	install -Dm644 debian/$(SVG) $(SCALABLE)$(SVG)
+	install -Dm644 debian/$(DESKTOP) $(APP)$(DESKTOP)
+
+override_dh_strip:
+override_dh_shlibdeps:
+
