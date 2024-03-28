@@ -1,9 +1,0 @@
-Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Natron
-Upstream-Contact: INRIA
-Source:
- https://github.com/NatronGitHub/Natron
-
-Files: *
-Copyright: 2013-2018 INRIA and Alexandre Gauthier-Foichat
-License: GPLv2
